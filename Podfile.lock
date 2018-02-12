@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - Kingfisher (4.6.1)
+  - LLSpinner (0.0.1)
+  - ObjectMapper (3.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - AlamofireObjectMapper (~> 5.0)
+  - Kingfisher (~> 4.0)
+  - LLSpinner
+  - ObjectMapper (~> 3.1)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  LLSpinner: 0ed607d59b3a447ddd157c29ef684de7a5a285ad
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+
+PODFILE CHECKSUM: b671ec5f64c565735a251fed7f604a49d74c47c2
+
+COCOAPODS: 1.4.0

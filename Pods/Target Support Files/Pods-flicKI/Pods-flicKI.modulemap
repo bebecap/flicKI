@@ -1,0 +1,6 @@
+framework module Pods_flicKI {
+  umbrella header "Pods-flicKI-umbrella.h"
+
+  export *
+  module * { export * }
+}

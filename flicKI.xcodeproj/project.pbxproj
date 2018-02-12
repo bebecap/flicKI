@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60AED2613BD5CB5F5FD76E37 /* Pods_flicKI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7312487B5F77627CAB79E2 /* Pods_flicKI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		645FCEB1202E09F400536548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEB0202E09F400536548 /* AppDelegate.swift */; };
+		645FCEB6202E09F400536548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645FCEB4202E09F400536548 /* Main.storyboard */; };
+		645FCEB8202E09F400536548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645FCEB7202E09F400536548 /* Assets.xcassets */; };
+		645FCEBB202E09F400536548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645FCEB9202E09F400536548 /* LaunchScreen.storyboard */; };
+		645FCEC6202E09F500536548 /* flicKITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEC5202E09F500536548 /* flicKITests.swift */; };
+		645FCED1202E09F500536548 /* flicKIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCED0202E09F500536548 /* flicKIUITests.swift */; };
+		645FCEE2202E76A600536548 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEE1202E76A600536548 /* NetworkHandler.swift */; };
+		645FCEE4202E76F700536548 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEE3202E76F700536548 /* Photo.swift */; };
+		645FCEE8202E82DF00536548 /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEE7202E82DF00536548 /* PhotoResponse.swift */; };
+		645FCEEC202E930800536548 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEEB202E930800536548 /* MainTableViewController.swift */; };
+		645FCEEE202E936200536548 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEED202E936200536548 /* CollectionTableViewCell.swift */; };
+		64ABECE42030A44A00D291B7 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABECE32030A44A00D291B7 /* PhotoCollectionViewCell.swift */; };
+		64ABECE620311FA600D291B7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABECE520311FA600D291B7 /* DetailViewController.swift */; };
+		64ABECE820312FE200D291B7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 64ABECE720312FE100D291B7 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		645FCEC2202E09F500536548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645FCEA5202E09F400536548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 645FCEAC202E09F400536548;
+			remoteInfo = flicKI;
+		};
+		645FCECD202E09F500536548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645FCEA5202E09F400536548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 645FCEAC202E09F400536548;
+			remoteInfo = flicKI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BD885DFCE826EDD3FBA1119 /* Pods-flicKI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flicKI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flicKI/Pods-flicKI.debug.xcconfig"; sourceTree = "<group>"; };
+		645FCEAD202E09F400536548 /* flicKI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flicKI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		645FCEB0202E09F400536548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		645FCEB5202E09F400536548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		645FCEB7202E09F400536548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		645FCEBA202E09F400536548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		645FCEBC202E09F400536548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		645FCEC1202E09F500536548 /* flicKITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flicKITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		645FCEC5202E09F500536548 /* flicKITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flicKITests.swift; sourceTree = "<group>"; };
+		645FCEC7202E09F500536548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		645FCECC202E09F500536548 /* flicKIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flicKIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		645FCED0202E09F500536548 /* flicKIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flicKIUITests.swift; sourceTree = "<group>"; };
+		645FCED2202E09F500536548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		645FCEE1202E76A600536548 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		645FCEE3202E76F700536548 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		645FCEE7202E82DF00536548 /* PhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
+		645FCEEB202E930800536548 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		645FCEED202E936200536548 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		64ABECE32030A44A00D291B7 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		64ABECE520311FA600D291B7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		64ABECE720312FE100D291B7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		98C8D21EC46CA53A093C6102 /* Pods-flicKI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flicKI.release.xcconfig"; path = "Pods/Target Support Files/Pods-flicKI/Pods-flicKI.release.xcconfig"; sourceTree = "<group>"; };
+		BE7312487B5F77627CAB79E2 /* Pods_flicKI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flicKI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		645FCEAA202E09F400536548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AED2613BD5CB5F5FD76E37 /* Pods_flicKI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645FCEBE202E09F500536548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645FCEC9202E09F500536548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		645FCEA4202E09F400536548 = {
+			isa = PBXGroup;
+			children = (
+				64ABECE720312FE100D291B7 /* Podfile */,
+				645FCEAF202E09F400536548 /* flicKI */,
+				645FCEC4202E09F500536548 /* flicKITests */,
+				645FCECF202E09F500536548 /* flicKIUITests */,
+				645FCEAE202E09F400536548 /* Products */,
+				98AB00CE8902FD34132064ED /* Pods */,
+				9E4D95A72E3BC8AB77CAEACC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		645FCEAE202E09F400536548 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				645FCEAD202E09F400536548 /* flicKI.app */,
+				645FCEC1202E09F500536548 /* flicKITests.xctest */,
+				645FCECC202E09F500536548 /* flicKIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		645FCEAF202E09F400536548 /* flicKI */ = {
+			isa = PBXGroup;
+			children = (
+				645FCEDE202E0D3300536548 /* Model */,
+				645FCEE0202E0D3F00536548 /* View */,
+				645FCEDF202E0D3900536548 /* Controller */,
+				645FCEB0202E09F400536548 /* AppDelegate.swift */,
+				645FCEB7202E09F400536548 /* Assets.xcassets */,
+				645FCEBC202E09F400536548 /* Info.plist */,
+			);
+			path = flicKI;
+			sourceTree = "<group>";
+		};
+		645FCEC4202E09F500536548 /* flicKITests */ = {
+			isa = PBXGroup;
+			children = (
+				645FCEC5202E09F500536548 /* flicKITests.swift */,
+				645FCEC7202E09F500536548 /* Info.plist */,
+			);
+			path = flicKITests;
+			sourceTree = "<group>";
+		};
+		645FCECF202E09F500536548 /* flicKIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				645FCED0202E09F500536548 /* flicKIUITests.swift */,
+				645FCED2202E09F500536548 /* Info.plist */,
+			);
+			path = flicKIUITests;
+			sourceTree = "<group>";
+		};
+		645FCEDE202E0D3300536548 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				645FCEE1202E76A600536548 /* NetworkHandler.swift */,
+				645FCEE3202E76F700536548 /* Photo.swift */,
+				645FCEE7202E82DF00536548 /* PhotoResponse.swift */,
+				645FCEED202E936200536548 /* CollectionTableViewCell.swift */,
+				64ABECE32030A44A00D291B7 /* PhotoCollectionViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		645FCEDF202E0D3900536548 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				645FCEEB202E930800536548 /* MainTableViewController.swift */,
+				64ABECE520311FA600D291B7 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		645FCEE0202E0D3F00536548 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				645FCEB9202E09F400536548 /* LaunchScreen.storyboard */,
+				645FCEB4202E09F400536548 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		98AB00CE8902FD34132064ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BD885DFCE826EDD3FBA1119 /* Pods-flicKI.debug.xcconfig */,
+				98C8D21EC46CA53A093C6102 /* Pods-flicKI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E4D95A72E3BC8AB77CAEACC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE7312487B5F77627CAB79E2 /* Pods_flicKI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		645FCEAC202E09F400536548 /* flicKI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645FCED5202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKI" */;
+			buildPhases = (
+				465160F537F15DA68CD69CB9 /* [CP] Check Pods Manifest.lock */,
+				645FCEA9202E09F400536548 /* Sources */,
+				645FCEAA202E09F400536548 /* Frameworks */,
+				645FCEAB202E09F400536548 /* Resources */,
+				6EA145D1CDBFEB20E1BEFEA5 /* [CP] Embed Pods Frameworks */,
+				40D63F2E841DD068B2E6EA1D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flicKI;
+			productName = flicKI;
+			productReference = 645FCEAD202E09F400536548 /* flicKI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		645FCEC0202E09F500536548 /* flicKITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645FCED8202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKITests" */;
+			buildPhases = (
+				645FCEBD202E09F500536548 /* Sources */,
+				645FCEBE202E09F500536548 /* Frameworks */,
+				645FCEBF202E09F500536548 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				645FCEC3202E09F500536548 /* PBXTargetDependency */,
+			);
+			name = flicKITests;
+			productName = flicKITests;
+			productReference = 645FCEC1202E09F500536548 /* flicKITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		645FCECB202E09F500536548 /* flicKIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645FCEDB202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKIUITests" */;
+			buildPhases = (
+				645FCEC8202E09F500536548 /* Sources */,
+				645FCEC9202E09F500536548 /* Frameworks */,
+				645FCECA202E09F500536548 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				645FCECE202E09F500536548 /* PBXTargetDependency */,
+			);
+			name = flicKIUITests;
+			productName = flicKIUITests;
+			productReference = 645FCECC202E09F500536548 /* flicKIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		645FCEA5202E09F400536548 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Volodymyr Grytsenko";
+				TargetAttributes = {
+					645FCEAC202E09F400536548 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					645FCEC0202E09F500536548 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 645FCEAC202E09F400536548;
+					};
+					645FCECB202E09F500536548 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 645FCEAC202E09F400536548;
+					};
+				};
+			};
+			buildConfigurationList = 645FCEA8202E09F400536548 /* Build configuration list for PBXProject "flicKI" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 645FCEA4202E09F400536548;
+			productRefGroup = 645FCEAE202E09F400536548 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				645FCEAC202E09F400536548 /* flicKI */,
+				645FCEC0202E09F500536548 /* flicKITests */,
+				645FCECB202E09F500536548 /* flicKIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		645FCEAB202E09F400536548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645FCEBB202E09F400536548 /* LaunchScreen.storyboard in Resources */,
+				645FCEB8202E09F400536548 /* Assets.xcassets in Resources */,
+				64ABECE820312FE200D291B7 /* Podfile in Resources */,
+				645FCEB6202E09F400536548 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645FCEBF202E09F500536548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645FCECA202E09F500536548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40D63F2E841DD068B2E6EA1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flicKI/Pods-flicKI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		465160F537F15DA68CD69CB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flicKI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EA145D1CDBFEB20E1BEFEA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-flicKI/Pods-flicKI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LLSpinner/LLSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flicKI/Pods-flicKI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		645FCEA9202E09F400536548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64ABECE620311FA600D291B7 /* DetailViewController.swift in Sources */,
+				645FCEE4202E76F700536548 /* Photo.swift in Sources */,
+				64ABECE42030A44A00D291B7 /* PhotoCollectionViewCell.swift in Sources */,
+				645FCEB1202E09F400536548 /* AppDelegate.swift in Sources */,
+				645FCEEE202E936200536548 /* CollectionTableViewCell.swift in Sources */,
+				645FCEE8202E82DF00536548 /* PhotoResponse.swift in Sources */,
+				645FCEEC202E930800536548 /* MainTableViewController.swift in Sources */,
+				645FCEE2202E76A600536548 /* NetworkHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645FCEBD202E09F500536548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645FCEC6202E09F500536548 /* flicKITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645FCEC8202E09F500536548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645FCED1202E09F500536548 /* flicKIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		645FCEC3202E09F500536548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 645FCEAC202E09F400536548 /* flicKI */;
+			targetProxy = 645FCEC2202E09F500536548 /* PBXContainerItemProxy */;
+		};
+		645FCECE202E09F500536548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 645FCEAC202E09F400536548 /* flicKI */;
+			targetProxy = 645FCECD202E09F500536548 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		645FCEB4202E09F400536548 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645FCEB5202E09F400536548 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		645FCEB9202E09F400536548 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645FCEBA202E09F400536548 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		645FCED3202E09F500536548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		645FCED4202E09F500536548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		645FCED6202E09F500536548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD885DFCE826EDD3FBA1119 /* Pods-flicKI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ443L285P;
+				INFOPLIST_FILE = flicKI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		645FCED7202E09F500536548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C8D21EC46CA53A093C6102 /* Pods-flicKI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ443L285P;
+				INFOPLIST_FILE = flicKI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		645FCED9202E09F500536548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ443L285P;
+				INFOPLIST_FILE = flicKITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flicKI.app/flicKI";
+			};
+			name = Debug;
+		};
+		645FCEDA202E09F500536548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ443L285P;
+				INFOPLIST_FILE = flicKITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flicKI.app/flicKI";
+			};
+			name = Release;
+		};
+		645FCEDC202E09F500536548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ443L285P;
+				INFOPLIST_FILE = flicKIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = flicKI;
+			};
+			name = Debug;
+		};
+		645FCEDD202E09F500536548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ443L285P;
+				INFOPLIST_FILE = flicKIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = flicKI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		645FCEA8202E09F400536548 /* Build configuration list for PBXProject "flicKI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645FCED3202E09F500536548 /* Debug */,
+				645FCED4202E09F500536548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645FCED5202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645FCED6202E09F500536548 /* Debug */,
+				645FCED7202E09F500536548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645FCED8202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645FCED9202E09F500536548 /* Debug */,
+				645FCEDA202E09F500536548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645FCEDB202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645FCEDC202E09F500536548 /* Debug */,
+				645FCEDD202E09F500536548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 645FCEA5202E09F400536548 /* Project object */;
+}
