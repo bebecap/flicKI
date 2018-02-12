@@ -1,8 +1,9 @@
 # flicKI
 
-FlicKI is a test application that provides the possibility to download and filter images from Flickr. Official public API was used.
+FlicKI is a test application that provides the possibility to download and filter images from Flickr. Official public API was used. Regarding Technical Challenge document there were some questions so desicion was to make on my own. 
+On the main screen there is a search text field in the navigation bar. When some tags were written and pressed "Go" on the keyboard one row will be added with first 20 pictures that came up to according tags. If there are no pictures empty row will be created anyway. New tag = new row
 
-## Next mandatory requirments are fullfilled:
+## Next mandatory requirements are fullfilled:
   - Third party libraries are used
   - App is pulled to GitHub
   - Fetch data from the public API
