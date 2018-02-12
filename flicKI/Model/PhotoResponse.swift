@@ -13,7 +13,7 @@ final class PhotoResponse: Mappable {
     
     var items: [Photo]?
     
-    required init?(map: Map){
+    init?(map: Map) {
         
     }
     

@@ -22,13 +22,27 @@ class NetworkHandler {
                     if let photos = response.result.value?.items {
                         completion(photos)
                     }
-                    break
-                    
+                    error(NetworkError(title: "Parse error", description: "PhotoResponse object was uncorrectly parsed", code: 101))
                 case .failure(_):
                     error(response.result.error!)
                     break
                 }
         }
     }
+}
+
+class NetworkError: Error {
     
+    var title: String?
+    var code: Int
+    var errorDescription: String? { return _description }
+    var failureReason: String? { return _description }
+    
+    private var _description: String
+    
+    init(title: String?, description: String, code: Int) {
+        self.title = title ?? "Error"
+        self._description = description
+        self.code = code
+    }
 }

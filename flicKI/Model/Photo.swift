@@ -25,7 +25,6 @@ final class Photo: Mappable, CustomStringConvertible {
     
     public var description: String { return "Photo: \n\tAuthor: \(author_id ?? "") \n\tTitle: \(title ?? "") \n\tDate: \(takenDate ?? Date()) \n\tLink: \(link ?? URL(string: "http://flickr.com")!) \n\tImage link: \(imagePreviewLink ?? URL(string: "http://flickr.com")!) \n\tTags:\(tags ?? "") \n" }
     
-    // MARK: - ObjectMapper protocol methods
     public func mapping(map: Map) {
         self.author_id <- map["author_id"]
         self.title <- map["title"]
@@ -39,6 +38,10 @@ final class Photo: Mappable, CustomStringConvertible {
 
 class FlickrDateTransform: TransformType
 {
+    typealias Object = Date
+    
+    typealias JSON = String
+    
     func transformFromJSON(_ value: Any?) -> Date? {
         let dateFormatter = ISO8601DateFormatter()
         return dateFormatter.date(from:value as! String)!
@@ -49,10 +52,6 @@ class FlickrDateTransform: TransformType
         return dateFormatter.string(from: value!)
     }
     
-    typealias Object = Date
-    
-    typealias JSON = String
-
 }
 
 class FlickrBigImageTransform: TransformType
