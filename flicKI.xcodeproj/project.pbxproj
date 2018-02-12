@@ -12,8 +12,6 @@
 		645FCEB6202E09F400536548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645FCEB4202E09F400536548 /* Main.storyboard */; };
 		645FCEB8202E09F400536548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645FCEB7202E09F400536548 /* Assets.xcassets */; };
 		645FCEBB202E09F400536548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645FCEB9202E09F400536548 /* LaunchScreen.storyboard */; };
-		645FCEC6202E09F500536548 /* flicKITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEC5202E09F500536548 /* flicKITests.swift */; };
-		645FCED1202E09F500536548 /* flicKIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCED0202E09F500536548 /* flicKIUITests.swift */; };
 		645FCEE2202E76A600536548 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEE1202E76A600536548 /* NetworkHandler.swift */; };
 		645FCEE4202E76F700536548 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEE3202E76F700536548 /* Photo.swift */; };
 		645FCEE8202E82DF00536548 /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645FCEE7202E82DF00536548 /* PhotoResponse.swift */; };
@@ -24,23 +22,6 @@
 		64ABECE820312FE200D291B7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 64ABECE720312FE100D291B7 /* Podfile */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		645FCEC2202E09F500536548 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 645FCEA5202E09F400536548 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 645FCEAC202E09F400536548;
-			remoteInfo = flicKI;
-		};
-		645FCECD202E09F500536548 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 645FCEA5202E09F400536548 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 645FCEAC202E09F400536548;
-			remoteInfo = flicKI;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		4BD885DFCE826EDD3FBA1119 /* Pods-flicKI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flicKI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flicKI/Pods-flicKI.debug.xcconfig"; sourceTree = "<group>"; };
 		645FCEAD202E09F400536548 /* flicKI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flicKI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,12 +30,6 @@
 		645FCEB7202E09F400536548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		645FCEBA202E09F400536548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		645FCEBC202E09F400536548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		645FCEC1202E09F500536548 /* flicKITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flicKITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		645FCEC5202E09F500536548 /* flicKITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flicKITests.swift; sourceTree = "<group>"; };
-		645FCEC7202E09F500536548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		645FCECC202E09F500536548 /* flicKIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flicKIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		645FCED0202E09F500536548 /* flicKIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flicKIUITests.swift; sourceTree = "<group>"; };
-		645FCED2202E09F500536548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		645FCEE1202E76A600536548 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		645FCEE3202E76F700536548 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		645FCEE7202E82DF00536548 /* PhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
@@ -76,20 +51,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		645FCEBE202E09F500536548 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		645FCEC9202E09F500536548 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,8 +59,6 @@
 			children = (
 				64ABECE720312FE100D291B7 /* Podfile */,
 				645FCEAF202E09F400536548 /* flicKI */,
-				645FCEC4202E09F500536548 /* flicKITests */,
-				645FCECF202E09F500536548 /* flicKIUITests */,
 				645FCEAE202E09F400536548 /* Products */,
 				98AB00CE8902FD34132064ED /* Pods */,
 				9E4D95A72E3BC8AB77CAEACC /* Frameworks */,
@@ -110,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				645FCEAD202E09F400536548 /* flicKI.app */,
-				645FCEC1202E09F500536548 /* flicKITests.xctest */,
-				645FCECC202E09F500536548 /* flicKIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,24 +84,6 @@
 				645FCEBC202E09F400536548 /* Info.plist */,
 			);
 			path = flicKI;
-			sourceTree = "<group>";
-		};
-		645FCEC4202E09F500536548 /* flicKITests */ = {
-			isa = PBXGroup;
-			children = (
-				645FCEC5202E09F500536548 /* flicKITests.swift */,
-				645FCEC7202E09F500536548 /* Info.plist */,
-			);
-			path = flicKITests;
-			sourceTree = "<group>";
-		};
-		645FCECF202E09F500536548 /* flicKIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				645FCED0202E09F500536548 /* flicKIUITests.swift */,
-				645FCED2202E09F500536548 /* Info.plist */,
-			);
-			path = flicKIUITests;
 			sourceTree = "<group>";
 		};
 		645FCEDE202E0D3300536548 /* Model */ = {
@@ -217,42 +156,6 @@
 			productReference = 645FCEAD202E09F400536548 /* flicKI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		645FCEC0202E09F500536548 /* flicKITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 645FCED8202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKITests" */;
-			buildPhases = (
-				645FCEBD202E09F500536548 /* Sources */,
-				645FCEBE202E09F500536548 /* Frameworks */,
-				645FCEBF202E09F500536548 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				645FCEC3202E09F500536548 /* PBXTargetDependency */,
-			);
-			name = flicKITests;
-			productName = flicKITests;
-			productReference = 645FCEC1202E09F500536548 /* flicKITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		645FCECB202E09F500536548 /* flicKIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 645FCEDB202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKIUITests" */;
-			buildPhases = (
-				645FCEC8202E09F500536548 /* Sources */,
-				645FCEC9202E09F500536548 /* Frameworks */,
-				645FCECA202E09F500536548 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				645FCECE202E09F500536548 /* PBXTargetDependency */,
-			);
-			name = flicKIUITests;
-			productName = flicKIUITests;
-			productReference = 645FCECC202E09F500536548 /* flicKIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -266,16 +169,6 @@
 					645FCEAC202E09F400536548 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					645FCEC0202E09F500536548 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 645FCEAC202E09F400536548;
-					};
-					645FCECB202E09F500536548 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 645FCEAC202E09F400536548;
 					};
 				};
 			};
@@ -293,8 +186,6 @@
 			projectRoot = "";
 			targets = (
 				645FCEAC202E09F400536548 /* flicKI */,
-				645FCEC0202E09F500536548 /* flicKITests */,
-				645FCECB202E09F500536548 /* flicKIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,20 +199,6 @@
 				645FCEB8202E09F400536548 /* Assets.xcassets in Resources */,
 				64ABECE820312FE200D291B7 /* Podfile in Resources */,
 				645FCEB6202E09F400536548 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		645FCEBF202E09F500536548 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		645FCECA202E09F500536548 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,36 +282,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		645FCEBD202E09F500536548 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				645FCEC6202E09F500536548 /* flicKITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		645FCEC8202E09F500536548 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				645FCED1202E09F500536548 /* flicKIUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		645FCEC3202E09F500536548 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 645FCEAC202E09F400536548 /* flicKI */;
-			targetProxy = 645FCEC2202E09F500536548 /* PBXContainerItemProxy */;
-		};
-		645FCECE202E09F500536548 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 645FCEAC202E09F400536548 /* flicKI */;
-			targetProxy = 645FCECD202E09F500536548 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		645FCEB4202E09F400536548 /* Main.storyboard */ = {
@@ -595,72 +443,6 @@
 			};
 			name = Release;
 		};
-		645FCED9202E09F500536548 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DQ443L285P;
-				INFOPLIST_FILE = flicKITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flicKI.app/flicKI";
-			};
-			name = Debug;
-		};
-		645FCEDA202E09F500536548 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DQ443L285P;
-				INFOPLIST_FILE = flicKITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flicKI.app/flicKI";
-			};
-			name = Release;
-		};
-		645FCEDC202E09F500536548 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DQ443L285P;
-				INFOPLIST_FILE = flicKIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = flicKI;
-			};
-			name = Debug;
-		};
-		645FCEDD202E09F500536548 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DQ443L285P;
-				INFOPLIST_FILE = flicKIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ki-labs.flicKI.flicKIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = flicKI;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -678,24 +460,6 @@
 			buildConfigurations = (
 				645FCED6202E09F500536548 /* Debug */,
 				645FCED7202E09F500536548 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		645FCED8202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				645FCED9202E09F500536548 /* Debug */,
-				645FCEDA202E09F500536548 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		645FCEDB202E09F500536548 /* Build configuration list for PBXNativeTarget "flicKIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				645FCEDC202E09F500536548 /* Debug */,
-				645FCEDD202E09F500536548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
